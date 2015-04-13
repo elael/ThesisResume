@@ -1,0 +1,35 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+
+\documentclass[a4paper,11pt,oneside]{article}
+
+\usepackage[utf8]{inputenx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{textgreek}
+\usepackage{mathtools}
+
+ 
+\graphicspath{{../figs/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\newcommand{\cpar}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\cspar}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\euTwo}[2]{\sqrt{\left ( #1 \right )^2 + \left ( #2 \right )^2 +
+1^2}}
+\newcommand{\euThree}[3]{\sqrt{\left ( #1 \right )^2 + \left ( #2 \right
+)^2 + \left ( #3 \right )^2 }}
+
+\begin{document}
+
+
+\include{sonars}
+
+\include{mappingdef}
+
+More plain text.
+
+\bibliographystyle{coppe}
+\bibliography{MapingSonar-SAS}
+
+\end{document}

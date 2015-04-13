@@ -1,0 +1,21 @@
+
+\section{Mapping}
+
+The meaning of mapping can be interpreted in different ways, depending on the
+context. Taking what they all have in common, it is possible to generically
+define mapping as being the processing of received environmental data to
+characterize the surroundings. In this characterization is where the difference
+lays, how the environs are going to be represented is dependent on the
+application.
+
+On a SLAM, Simultaneous Localization and Mapping, system there is no intrinsic
+need for a human readable map. In such a system, it may be more interesting to
+store the map information only through its most representative features, if that
+is what matters for the localization procedure.
+
+On the other hand, if the map is to be seen by a human it should store more
+information about the environment, so that it can be displayed as a usual map,
+3D or 2D depending on the case. This representation also guides how the data
+could be stored, e.g. if it wants to show a surface, it can be stored as a
+elevation map, or if one wants to see a 3D object it can be stored as a point
+cloud.

@@ -1,0 +1,35 @@
+
+\section{Sonars}
+
+Sonars measures the sound on the water, its main parts are the hydrophones. They
+can emit and receive sound waves just like microphones and headphones do in the
+air. They can be specialized to listen the environment and interpret its sounds,
+usually by their frequency, which is the case for passive sonars. Or they can
+emit a beam of sound and wait for the reception of the echo.
+
+ When talking about active sonars, the ones that measures sound echo emitted
+by itself, there are two important classes based on its beam directional gain:
+Profiling and Imaging.
+Profiling have a narrow pencil shaped beam, with an aperture of about $1.7$
+degrees, i.e. the half power point. It is meant to have a similar response of
+what is expected from a laser scanner, but working with sound waves. At the end
+of the day, they does not correlate much because they differ greatly on noise,
+response time and spatial resolution.
+
+Imaging sonars are the focus of this work, they make use of a much wider than
+Profiling sonar fan shaped beam. It use to have around $3$ degrees angle of
+aperture in the vertical direction, but keeping same angular resolution on the
+horizontal plane.
+It does not have the aim to provide a localized information about the target,
+but rather a more general information, being able to infer some information
+about the presence of objects below or above its horizontal plane. From this
+point of view, each beam gives a concentrated information about the region it
+ensonifies, so fusing the information of multiple beams from different
+directions and angles is expected to give a better outline of the environment
+than just using isolated sonar responses.
+
+Besides classification based on beam shape, there are others as multi- or single
+beam. Firing multiple beams at once gives a faster rate, as one does not need to
+wait for the response to arrive before redirecting the beam to the next angular
+position. But the least expensive still single beam and is the one that is going
+to be considered.
